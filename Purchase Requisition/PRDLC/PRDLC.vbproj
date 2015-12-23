@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D1E1D0CA-3409-4B87-8C98-0AE8C47F23A7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PRDLC</RootNamespace>
+    <AssemblyName>PRDLC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PRDLC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PRDLC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\PRDLC.dll" />
+    <Content Include="bin\PRDLC.pdb" />
+    <Content Include="bin\PRDLC.xml" />
+    <Content Include="DLLs\AjaxControlToolkit.dll" />
+    <Content Include="DLLs\AjaxControlToolkit.pdb" />
+    <Content Include="DLLs\AjaxMin.dll" />
+    <Content Include="DLLs\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\de\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="DLLs\de\Microsoft.Data.OData.resources.dll" />
+    <Content Include="DLLs\de\System.Spatial.resources.dll" />
+    <Content Include="DLLs\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\es\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="DLLs\es\Microsoft.Data.OData.resources.dll" />
+    <Content Include="DLLs\es\System.Spatial.resources.dll" />
+    <Content Include="DLLs\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\fr\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="DLLs\fr\Microsoft.Data.OData.resources.dll" />
+    <Content Include="DLLs\fr\System.Spatial.resources.dll" />
+    <Content Include="DLLs\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\it\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="DLLs\it\Microsoft.Data.OData.resources.dll" />
+    <Content Include="DLLs\it\System.Spatial.resources.dll" />
+    <Content Include="DLLs\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\ja\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="DLLs\ja\Microsoft.Data.OData.resources.dll" />
+    <Content Include="DLLs\ja\System.Spatial.resources.dll" />
+    <Content Include="DLLs\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\ko\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="DLLs\ko\Microsoft.Data.OData.resources.dll" />
+    <Content Include="DLLs\ko\System.Spatial.resources.dll" />
+    <Content Include="DLLs\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\pl\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\ru\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="DLLs\ru\Microsoft.Data.OData.resources.dll" />
+    <Content Include="DLLs\ru\System.Spatial.resources.dll" />
+    <Content Include="DLLs\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="DLLs\zh-Hans\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="DLLs\zh-Hans\Microsoft.Data.OData.resources.dll" />
+    <Content Include="DLLs\zh-Hans\System.Spatial.resources.dll" />
+    <Content Include="DLLs\zh-Hant\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="DLLs\zh-Hant\Microsoft.Data.OData.resources.dll" />
+    <Content Include="DLLs\zh-Hant\System.Spatial.resources.dll" />
+    <Content Include="Images\Add.jpg" />
+    <Content Include="Images\BG_world.png" />
+    <Content Include="Images\Bottom_texture.jpg" />
+    <Content Include="Images\Cancel.png" />
+    <Content Include="Images\edit-icon.png" />
+    <Content Include="Images\GreenHover1.png" />
+    <Content Include="Images\history-icon.png" />
+    <Content Include="Images\Homeicon.jpg" />
+    <Content Include="Images\logo-HDF-web.png" />
+    <Content Include="Images\search.jpg" />
+    <Content Include="Images\waiting.gif" />
+    <Content Include="Login.aspx" />
+    <Content Include="MRApproval.aspx" />
+    <Content Include="obj\Debug\PRDLC.dll" />
+    <Content Include="obj\Debug\PRDLC.pdb" />
+    <Content Include="obj\Debug\PRDLC.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\PRDLC.xml" />
+    <Content Include="PRApproval.aspx" />
+    <Content Include="Scripts\Init.js" />
+    <Content Include="Scripts\Jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\progress-circle.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\main.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\StyleSheet.css" />
+    <Content Include="Styles\vThink_Theme.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Home.aspx" />
+    <Content Include="EmpPR.aspx" />
+    <Content Include="EmpMR.aspx" />
+    <Content Include="ChangePwd.aspx" />
+    <Content Include="PRDLCApproval.aspx" />
+    <Content Include="MRDLCApproval.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonVariable.vb" />
+    <Compile Include="EMPRDLC.Master.designer.vb">
+      <DependentUpon>EMPRDLC.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EMPRDLC.Master.vb">
+      <DependentUpon>EMPRDLC.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MRApproval.aspx.designer.vb">
+      <DependentUpon>MRApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MRApproval.aspx.vb">
+      <DependentUpon>MRApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EmpPR.aspx.designer.vb">
+      <DependentUpon>EmpPR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpPR.aspx.vb">
+      <DependentUpon>EmpPR.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EmpMR.aspx.designer.vb">
+      <DependentUpon>EmpMR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpMR.aspx.vb">
+      <DependentUpon>EmpMR.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ChangePwd.aspx.designer.vb">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePwd.aspx.vb">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PRApproval.aspx.designer.vb">
+      <DependentUpon>PRApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRApproval.aspx.vb">
+      <DependentUpon>PRApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRDLCApproval.aspx.designer.vb">
+      <DependentUpon>PRDLCApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRDLCApproval.aspx.vb">
+      <DependentUpon>PRDLCApproval.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MRDLCApproval.aspx.designer.vb">
+      <DependentUpon>MRDLCApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MRDLCApproval.aspx.vb">
+      <DependentUpon>MRDLCApproval.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\PRDLC.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\PRDLC.b1s" />
+    <Content Include="EMPRDLC.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\PRDLC.vbproj.GenerateResource.Cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Error\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPbobsCOM">
+      <Guid>{FC8030BE-F5D2-4B8E-8F92-44228FE30090}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.vbproj">
+      <Project>{42466F04-D9FD-463E-A513-F758CA5BADA2}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.vbproj">
+      <Project>{9F014970-DE8B-4FC1-9C37-757E90C0BDCF}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EN\EN.vbproj">
+      <Project>{6B23769E-2D68-4251-8650-F3FB51AE7143}</Project>
+      <Name>EN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>18270</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

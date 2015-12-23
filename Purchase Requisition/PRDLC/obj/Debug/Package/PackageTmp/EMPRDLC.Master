@@ -1,0 +1,235 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="EMPRDLC.master.vb" Inherits="PRDLC.EMPRDLC" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head id="Head1" runat="server">
+    <title>Employee Purchase Requisition </title>
+    <link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery.min.js" type="text/javascript" language="javascript"></script>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript" language="javascript"></script>
+    <script src="Scripts/main.js" type="text/javascript" language="javascript"></script>
+    <link rel="stylesheet" href="Styles/main.css" type="text/css" />
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="Styles/vThink_Theme.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <script type="text/javascript">
+            window.history.forward();
+            function noBack() { window.history.forward(); }
+        </script>
+        <script lang="javascript" type="text/javascript">
+            function RedirectToLoginPage() {
+                alert("Session expired. You will be redirected to Login page");
+                window.location = "Login.aspx";
+            }
+     
+        </script>
+        <script type='text/javascript'>
+
+            $(function () {
+
+                // Stick the #nav to the top of the window
+
+                var nav = $('#menu');
+
+                var navHomeY = nav.offset().top;
+
+                var isFixed = false;
+
+                var $w = $(window);
+
+                $w.scroll(function () {
+
+                    var scrollTop = $w.scrollTop();
+
+                    var shouldBeFixed = scrollTop > navHomeY;
+
+                    if (shouldBeFixed && !isFixed) {
+
+                        nav.css({
+
+                            position: 'fixed',
+
+                            top: 0,
+
+                            left: nav.offset().left,
+
+                            width: nav.width()
+
+                        });
+
+                        isFixed = true;
+
+                    }
+
+                    else if (!shouldBeFixed && isFixed) {
+
+                        nav.css({
+
+                            position: 'static'
+
+                        });
+
+                        isFixed = false;
+
+                    }
+
+                });
+
+            });
+ 
+        </script>
+        <style type="text/css">
+            .main_menu
+            {
+                width: 100px;
+                background-color: Green;
+                color: White;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            .level_menu
+            {
+                width: 150px;
+                background-color: Green;
+                color: #fff;
+                text-align: center;
+                height: 30px;
+            }
+            .selected
+            {
+                background-color: Green;
+                color: #fff;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function translate(element, toLanguage) {
+                if ((element.innerHTML != null) && (element.innerHTML != "")) {
+                    google.language.detect(element.innerHTML, function (result) {
+                        if (!result.error && result.language) {
+                            google.language.translate(element.innerHTML, result.language, toLanguage, function (result) {
+                                if (result.translation) {
+                                    element.innerHTML = result.translation;
+                                }
+                            });
+                        }
+                    });
+                }
+            }
+
+            function ChangeLanguage(toLanguage) {
+                var elements = "span,a,h1,h2,h3,h4,p,table,td";
+                var e = elements.split(",");
+                for (var j = 0; j < e.length; j++) {
+                    var doc = document.getElementsByTagName(e[j]);
+                    for (var i = 0; i < doc.length; i++) {
+                        translate(doc[i], toLanguage);
+                    }
+                }
+            }
+
+            function GetChange(val) {
+                ChangeLanguage(val);
+            }  
+</script>  
+    </asp:ContentPlaceHolder>
+</head>
+<body style="overflow-x: none;">
+    <form id="form1" runat="server" style="box-shadow: 0px 0px 10px #f17700;">
+    <ajx:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" ScriptMode="Release">
+    </ajx:ToolkitScriptManager>
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table width="100%" cellspacing="0" cellpadding="0" style="z-index: 2; position: relative;
+                    padding: 5px; background-color: White; background-repeat: no-repeat; background-size: 100% 100%;">
+                    <%--  MY LOGO & ADDRESS--%>
+                    <tr>
+                        <td width="80%" style="padding-left: 20px;">
+                            <div style="height: 75px; background-image: url('Images/logo-HDF-web.png'); background-repeat: no-repeat;">
+                            </div>
+                      
+                          
+                        </td>
+                       
+                        <td width="30%" style="color: #333399; font-size: 15px;" align="right">
+                            <asp:Label ID="lblcompany" runat="server"></asp:Label><br />
+                            <asp:Label ID="lblstreet" runat="server"></asp:Label><br />
+                            <asp:Label ID="lblblock" runat="server"></asp:Label><a>,</a>
+                            <asp:Label ID="lblstate" runat="server"></asp:Label>
+                            <br /><br />
+                              <font style="color: #333400; font-weight:bold;">Welcome</font>
+                                <asp:Label ID="lbluser" runat="server" ForeColor="#333399"></asp:Label><font style="color: Green">!!&nbsp;</font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="width: 100%;" class="BgGradiant">
+                    <div>
+                        <div id="menu">
+                            <ul class="level1">
+                                <li class="level1-li"><a class="level1-a" href="Home.aspx">Home</a></li>
+                                <li class="level1-li"><a class="level1-a" href="EmpPR.aspx">Purchase Requisition </a></li>
+                                <li class="level1-li"><a class="level1-a" href="EmpMR.aspx">Material Return</a></li>
+                                  <li class="level1-li"><a class="level1-a drop" href="#">Approval</a>
+                                    <ul class="level2">
+                                      <li><a href="#" class="fly">DLC Approval</a>
+                                            <ul class="level3">
+                                                <li><a href="PRDLCApproval.aspx">Purchase Requisition </a></li>
+                                                <li><a href="MRDLCApproval.aspx">Material Return </a></li>
+                                            </ul>
+                                        </li>
+                                          <li><a href="#" class="fly">StoreKeeper Approval</a>
+                                            <ul class="level3">
+                                                <li><a href="PRApproval.aspx">Purchase Requisition Approval </a></li>
+                                                <li><a href="MRApproval.aspx">Material Return Approval </a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> 
+                                  </li> 
+                                <li class="level1-li"><a class="level1-a" href="ChangePwd.aspx">Change Password</a></li>
+                                <li class="level1-li"><a class="level1-a" href="Login.aspx">Logout</a></li>
+                                <div style="float:right; margin-left:-10px;">
+                                   <li class="level1-li" style="border:none;"><a>Select Language</a></li>
+                                   <asp:DropDownList ID="ddlLang" runat="server" Width="100px" onchange="GetChange(this.value)" style="margin-top:4px;">
+                                   <asp:ListItem Value="en">English</asp:ListItem>
+                                   <asp:ListItem Value="fr">French</asp:ListItem>
+                                   </asp:DropDownList> 
+                                </div>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="100%" valign="top" style="height: 500px; background-color: White;">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" colspan="2" class="foottxt" height="25px" style="width: 100%;
+                font-size: small; padding-right: 20px; background-size: 100% 100%; background-color: #19637D;"
+                align="center">
+            </td>
+        </tr>
+    </table>
+    <asp:LinkButton ID="lbtnlogout" runat="server" Style="display: none;">Logout</asp:LinkButton>
+    </form>
+</body>
+</html>
