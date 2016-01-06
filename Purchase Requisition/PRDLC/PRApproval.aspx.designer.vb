@@ -311,6 +311,15 @@ Partial Public Class PRApproval
     Protected WithEvents lblTANo As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''lblcostcenter control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblcostcenter As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''lblDocStatus control.
     '''</summary>
     '''<remarks>
@@ -480,24 +489,6 @@ Partial Public Class PRApproval
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtItemcode As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''btnItem control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnItem As Global.System.Web.UI.WebControls.ImageButton
-
-    '''<summary>
-    '''ModalPopupExtender7 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ModalPopupExtender7 As Global.AjaxControlToolkit.ModalPopupExtender
 
     '''<summary>
     '''txtitmdesc control.

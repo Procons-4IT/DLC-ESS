@@ -85,7 +85,7 @@
                                                 <td valign="top">
                                                     <ajx:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0" CssClass="ajax__tab_yuitabview-theme"
                                                         Width="100%">
-                                                        <ajx:TabPanel ID="TabPanel2" runat="server" HeaderText="Purchase Requisition Approval">
+                                                        <ajx:TabPanel ID="TabPanel2" runat="server" HeaderText="Material Return Approval">
                                                             <ContentTemplate>
                                                                 <table width="100%" border="0" cellspacing="0" cellpadding="3" class="main_content">
                                                                     <tr>
@@ -153,7 +153,7 @@
                                                                 </table>
                                                             </ContentTemplate>
                                                         </ajx:TabPanel>
-                                                        <ajx:TabPanel ID="TabPanel4" runat="server" HeaderText="Purchase Requisition Summary">
+                                                        <ajx:TabPanel ID="TabPanel4" runat="server" HeaderText="Material Return Summary">
                                                             <ContentTemplate>
                                                                 <table width="100%" border="0" cellspacing="0" cellpadding="3" class="main_content">
                                                                     <tr>

@@ -104,7 +104,7 @@ Public Class EmpMRDA
     End Function
     Public Function LoadHistory(ByVal objEN As EmpPREN) As DataSet
         Try
-            objDA.strQuery = " Select DocEntry,U_Z_DocEntry,U_Z_DocType,U_Z_EmpId,U_Z_EmpName,U_Z_ItemCode,U_Z_ItemName,U_Z_OrdQty,U_Z_delUomDesc,U_Z_ApproveBy,convert(varchar(10),CreateDate,103) as CreateDate,CreateTime, convert(varchar(10),UpdateDate,103) as UpdateDate,UpdateTime,Case U_Z_AppStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' when 'R' then 'DLC Rejected' when 'A' then 'DLC Approved' end AS U_Z_AppStatus,U_Z_Remarks From [@Z_DLC_APHIS] "
+            objDA.strQuery = " Select DocEntry,U_Z_DocEntry,U_Z_DocType,U_Z_EmpId,U_Z_EmpName,U_Z_ItemCode,U_Z_ItemName,CAST(U_Z_OrdQty AS Int) AS U_Z_OrdQty,U_Z_delUomDesc,U_Z_ApproveBy,convert(varchar(10),CreateDate,103) as CreateDate,CreateTime, convert(varchar(10),UpdateDate,103) as UpdateDate,UpdateTime,Case U_Z_AppStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' when 'R' then 'DLC Rejected' when 'A' then 'DLC Approved' end AS U_Z_AppStatus,U_Z_Remarks From [@Z_DLC_APHIS] "
             objDA.strQuery += " Where (U_Z_DocType = 'MRD' or U_Z_DocType='MR') And U_Z_DocEntry = '" & objEN.Code & "' and (isnull(U_Z_DLineId,'')='" & objEN.ItemSpec & "' or isnull(U_Z_DLineId,'')='')"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.Ds2)
@@ -117,7 +117,7 @@ Public Class EmpMRDA
     Public Function TempLines(ByVal objen As EmpPREN) As DataSet
         Try
             objDA.strQuery = "Select case LineStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'L' then 'Cancelled' end as 'LineDesc',"
-            objDA.strQuery += " Case AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end as 'AppDesc',*  from [U_ORPD]  where SessionId=" & objen.SessionId & " and EmpId='" & objen.EmpId & "'"
+            objDA.strQuery += " Case AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end as 'AppDesc',CAST(OrderQty AS Int) AS OrderQty,*  from [U_ORPD]  where SessionId=" & objen.SessionId & " and EmpId='" & objen.EmpId & "'"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.dss1)
             Return objDA.dss1
@@ -182,7 +182,7 @@ Public Class EmpMRDA
     Public Function BindPRequestApproval(ByVal objEN As EmpPREN) As DataSet
         Try
             objDA.strQuery = "Select case LineStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' end as 'LineDesc',"
-            objDA.strQuery += " Case AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end as 'AppDesc', *  from [U_ORPD]  where SessionId=" & objEN.SessionId & " and EmpId='" & objEN.EmpId & "' and (isnull(RefNo,'')='" & objEN.DocNo & "' or isnull(RefNo,'')='');"
+            objDA.strQuery += " Case AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end as 'AppDesc',CAST(OrderQty AS Int) AS OrderQty, *  from [U_ORPD]  where SessionId=" & objEN.SessionId & " and EmpId='" & objEN.EmpId & "' and (isnull(RefNo,'')='" & objEN.DocNo & "' or isnull(RefNo,'')='');"
             objDA.strQuery += " Select T0.DocEntry,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,Case T0.""U_Z_DocStatus"" when 'O' then 'Open' when 'I' then 'InProgress' when 'S' then 'Confirm' when 'L' then 'Cancelled' when 'D' then 'Draft' when 'R' then 'DLC Rejected' when 'DI' then 'DLC InProgress' else 'Closed' end AS ""U_Z_DocStatus"" from [@Z_ORPD] T0 where T0.DocEntry='" & objEN.DocNo & "';"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.Ds1)

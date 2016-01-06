@@ -131,6 +131,7 @@ Public Class PRApproval
                 lbldeptName.Text = dbCon.Ds1.Tables(1).Rows(0)("U_Z_DeptName").ToString()
                 ddldestination.SelectedValue = dbCon.Ds1.Tables(1).Rows(0)("U_Z_Destination").ToString()
                 lblDocStatus.Text = dbCon.Ds1.Tables(1).Rows(0)("U_Z_DocStatus").ToString()
+                lblcostcenter.Text = dbCon.Ds1.Tables(1).Rows(0)("U_Dimension").ToString()
             End If
             PanelMain.Visible = False
             panelview.Visible = True

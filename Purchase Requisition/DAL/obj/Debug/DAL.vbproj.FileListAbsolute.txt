@@ -180,3 +180,17 @@ E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_
 E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_20151209\Purchase Requisition_20151209\DAL\obj\Debug\DAL.dll
 E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_20151209\Purchase Requisition_20151209\DAL\obj\Debug\DAL.xml
 E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_20151209\Purchase Requisition_20151209\DAL\obj\Debug\DAL.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\bin\Debug\DAL.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\bin\Debug\DAL.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\bin\Debug\DAL.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\bin\Debug\EN.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\bin\Debug\EN.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\bin\Debug\EN.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\obj\Debug\DAL.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\obj\Debug\DAL.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\obj\Debug\DAL.Resources.resources
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\obj\Debug\DAL.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\obj\Debug\DAL.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\obj\Debug\DAL.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\DAL\obj\Debug\DAL.pdb

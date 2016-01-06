@@ -234,7 +234,7 @@ Public Class DBConnectionDA
             strQuery += " DeptCode nvarchar(50) NULL,DeptName nvarchar(100) NULL,DocNum nvarchar(30) NULL,DocStatus [char](10) NULL,Priority [char](10) NULL,"
             strQuery += " OrdPatient [char](1) NULL,Series [nvarchar](20) NULL,RefNo nvarchar(50) NULL,ItemCode nvarchar(50) NULL,ItemName [nvarchar](150) NULL,ItemSpec nvarchar(200) NULL,"
             strQuery += " OrderQty Decimal(18,6) NULL,OrderUom nvarchar(100) NULL,OrderUomDesc nvarchar(100) NULL,AltItemCode nvarchar(200) NULL,AltItemDesc nvarchar(200) NULL,DelQty  Decimal(18,6) NULL,DelUom [nvarchar](30) NULL,DelUomDesc [nvarchar](100) NULL,ReceivedQty  Decimal(18,6) NULL,ReceivedUom [nvarchar](30) NULL,LineStatus nvarchar(40) NULL,"
-            strQuery += " Barcode nvarchar(100) NULL,AppStatus nchar(1) NULL,SessionId nchar(100) NULL,ReceivedUomDesc [nvarchar](30) NULL,AlterBarCode [nvarchar](30) NULL,NewDocStatus [nvarchar](30) NULL)"
+            strQuery += " Barcode nvarchar(100) NULL,AppStatus nchar(1) NULL,SessionId nchar(100) NULL,ReceivedUomDesc [nvarchar](30) NULL,AlterBarCode [nvarchar](30) NULL,NewDocStatus [nvarchar](30) NULL,CostCenter [nvarchar](250) NULL)"
             cmd = New SqlCommand(strQuery, con)
             con.Open()
             cmd.ExecuteNonQuery()

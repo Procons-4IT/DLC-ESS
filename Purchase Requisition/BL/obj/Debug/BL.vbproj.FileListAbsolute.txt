@@ -219,3 +219,20 @@ E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_
 E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_20151209\Purchase Requisition_20151209\BL\obj\Debug\BL.dll
 E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_20151209\Purchase Requisition_20151209\BL\obj\Debug\BL.xml
 E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_20151209\Purchase Requisition_20151209\BL\obj\Debug\BL.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\bin\Debug\BL.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\bin\Debug\BL.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\bin\Debug\BL.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\bin\Debug\DAL.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\bin\Debug\EN.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\bin\Debug\DAL.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\bin\Debug\DAL.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\bin\Debug\EN.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\bin\Debug\EN.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\obj\Debug\BL.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\obj\Debug\BL.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\obj\Debug\BL.Resources.resources
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\obj\Debug\BL.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\obj\Debug\BL.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\obj\Debug\BL.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\BL\obj\Debug\BL.pdb

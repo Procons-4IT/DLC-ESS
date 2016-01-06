@@ -275,6 +275,14 @@
                                                     </td>
                                                     <td width="5%">
                                                     </td>
+                                                    <td width="10%">
+                                                        Cost Center
+                                                    </td>
+                                                    <td>
+                                                        <asp:Label ID="lblCostCenter" CssClass="txtbox" runat="server" Width="150px"></asp:Label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
                                                     <td>
                                                         Destination
                                                     </td>
@@ -282,8 +290,8 @@
                                                         <asp:DropDownList ID="ddldestination" CssClass="txtbox1" Width="160px" runat="server">
                                                         </asp:DropDownList>
                                                     </td>
-                                                </tr>
-                                                <tr>
+                                                    <td width="5%">
+                                                    </td>
                                                     <td>
                                                         Priority
                                                     </td>
@@ -293,6 +301,12 @@
                                                             <asp:ListItem Value="M">Medium</asp:ListItem>
                                                             <asp:ListItem Value="H">High</asp:ListItem>
                                                         </asp:DropDownList>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                    </td>
+                                                    <td>
                                                     </td>
                                                     <td width="5%">
                                                     </td>

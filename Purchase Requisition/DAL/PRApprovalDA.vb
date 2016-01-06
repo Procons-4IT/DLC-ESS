@@ -59,8 +59,8 @@ Public Class PRApprovalDA
     End Function
     Public Function BindPRequestApproval(ByVal objEN As PRApprovalEN) As DataSet
         Try
-            objDA.strQuery = " Select T4.U_Z_DocNo,T0.DocEntry,T4.LineId,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,T4.U_Z_ItemCode,T4.U_Z_ItemName,T4.U_Z_OrdQty,T4.U_Z_OrdUomDesc,T4.U_Z_OrdUom,T4.U_Z_AltItemCode,T4.U_Z_AltItemName,Case Isnull(T4.U_Z_AppStatus,'P') when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end  AS U_Z_AppStatus,"
-            objDA.strQuery += "T4.U_Z_DeliQty,T4.U_Z_DelUom,T4.U_Z_DelUomDesc,U_Z_BarCode,U_Z_AltBarCode,U_Z_LineStatus,U_Z_GoodIssue,U_Z_CurApprover,U_Z_NxtApprover,"
+            objDA.strQuery = " Select T4.U_Z_DocNo,T0.DocEntry,T4.LineId,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,T4.U_Z_ItemCode,T4.U_Z_ItemName,CAST(T4.U_Z_OrdQty AS Int) AS U_Z_OrdQty,T4.U_Z_OrdUomDesc,T4.U_Z_OrdUom,T4.U_Z_AltItemCode,T4.U_Z_AltItemName,Case Isnull(T4.U_Z_AppStatus,'P') when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end  AS U_Z_AppStatus,"
+            objDA.strQuery += " CAST(T4.U_Z_DeliQty AS int) AS U_Z_DeliQty,T4.U_Z_DelUom,T4.U_Z_DelUomDesc,U_Z_BarCode,U_Z_AltBarCode,U_Z_LineStatus,U_Z_GoodIssue,U_Z_CurApprover,U_Z_NxtApprover,"
             objDA.strQuery += " Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',T4.U_Z_RejRemark,Convert(Varchar(10),T4.U_Z_AppReqDate,103) AS U_Z_AppReqDate,CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime'"
             objDA.strQuery += "  From [@Z_OPRQ] T0 JOIN [@Z_PRQ1] T4 on T0.DocEntry=T4.DocEntry "
             'objDA.strQuery += " Left Outer Join [@Z_DLC_APHIS] T5 on T0.DocEntry=T5.U_Z_DocEntry And T5.U_Z_DocType= 'PR' and T5.U_Z_ApproveBy='" + objEN.UserCode + "'"
@@ -68,7 +68,7 @@ Public Class PRApprovalDA
             objDA.strQuery += "  JOIN [@Z_DLC_APPT2] T2 ON T3.DocEntry = T2.DocEntry "
             objDA.strQuery += " And (T4.U_Z_CurApprover = '" + objEN.UserCode + "' OR T4.U_Z_NxtApprover = '" + objEN.UserCode + "')"
             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y' and  isnull(T4.U_Z_AppRequired,'N')='Y' and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = 'PR' where T0.DocEntry='" & objEN.DocEntry & "' Order by Convert(Numeric,T0.DocEntry) Desc;"
-            objDA.strQuery += " Select T0.DocEntry,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,Case isnull(T0.U_Z_DocStatus,'O') when 'O' then 'Open' when 'I' then 'InProgress' else 'Closed' end AS U_Z_DocStatus from [@Z_OPRQ] T0 where DocEntry='" & objEN.DocEntry & "';"
+            objDA.strQuery += " Select T0.DocEntry,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,Case isnull(T0.U_Z_DocStatus,'O') when 'O' then 'Open' when 'I' then 'InProgress' else 'Closed' end AS U_Z_DocStatus,U_Dimension from [@Z_OPRQ] T0 where DocEntry='" & objEN.DocEntry & "';"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.Ds1)
             Return objDA.Ds1
@@ -79,8 +79,8 @@ Public Class PRApprovalDA
     End Function
     Public Function ReBindPRequest(ByVal objEN As PRApprovalEN) As DataSet
         Try
-            objDA.strQuery = " Select T4.U_Z_DocNo,T0.DocEntry,T4.LineId,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,T4.U_Z_ItemCode,T4.U_Z_ItemName,T4.U_Z_OrdQty,T4.U_Z_OrdUomDesc,T4.U_Z_OrdUom,T4.U_Z_AltItemCode,T4.U_Z_AltItemName,Case Isnull(T4.U_Z_AppStatus,'P') when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end  AS U_Z_AppStatus,"
-            objDA.strQuery += "T4.U_Z_DeliQty,T4.U_Z_DelUom,T4.U_Z_DelUomDesc,U_Z_BarCode,U_Z_AltBarCode,U_Z_LineStatus,U_Z_GoodIssue,U_Z_CurApprover,U_Z_NxtApprover,"
+            objDA.strQuery = " Select T4.U_Z_DocNo,T0.DocEntry,T4.LineId,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,T4.U_Z_ItemCode,T4.U_Z_ItemName,CAST(T4.U_Z_OrdQty AS int) AS U_Z_OrdQty,T4.U_Z_OrdUomDesc,T4.U_Z_OrdUom,T4.U_Z_AltItemCode,T4.U_Z_AltItemName,Case Isnull(T4.U_Z_AppStatus,'P') when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end  AS U_Z_AppStatus,"
+            objDA.strQuery += " CAST(T4.U_Z_DeliQty AS int) AS U_Z_DeliQty,T4.U_Z_DelUom,T4.U_Z_DelUomDesc,U_Z_BarCode,U_Z_AltBarCode,U_Z_LineStatus,U_Z_GoodIssue,U_Z_CurApprover,U_Z_NxtApprover,"
             objDA.strQuery += " Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',T4.U_Z_RejRemark,Convert(Varchar(10),T4.U_Z_AppReqDate,103) AS U_Z_AppReqDate,CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime'"
             objDA.strQuery += "  From [@Z_OPRQ] T0 JOIN [@Z_PRQ1] T4 on T0.DocEntry=T4.DocEntry "
             'objDA.strQuery += " Left Outer Join [@Z_DLC_APHIS] T5 on T0.DocEntry=T5.U_Z_DocEntry And T5.U_Z_DocType= 'PR' and T5.U_Z_ApproveBy='" + objEN.UserCode + "'"
@@ -117,14 +117,14 @@ Public Class PRApprovalDA
             If objDA.Ds1.Tables(0).Rows.Count > 0 Then
                 If objDA.Ds1.Tables(0).Rows(0)(0).ToString() = "Y" Then
                     objDA.strQuery = "Select ItemCode,ItemName,isnull(CodeBars,'0') as CodeBars  from OITM where InvntItem='Y';"
-                    objDA.strQuery += " select U_Z_ItemCode,U_Z_ItemName,U_Z_BarCode,U_Z_OrdUom,U_Z_OrdQty,U_Z_AltBarCode,U_Z_AltItemCode,U_Z_AltItemName,U_Z_DelUom,U_Z_DeliQty  from [@Z_PRQ1] where DocEntry='" & objen.DocEntry & "' and LineId='" & objen.DocLineId & "';"
+                    objDA.strQuery += " select U_Z_ItemCode,U_Z_ItemName,U_Z_BarCode,U_Z_OrdUom,CAST(U_Z_OrdQty AS Int) AS U_Z_OrdQty,U_Z_AltBarCode,U_Z_AltItemCode,U_Z_AltItemName,U_Z_DelUom,CAST(U_Z_DeliQty AS Int) AS U_Z_DeliQty  from [@Z_PRQ1] where DocEntry='" & objen.DocEntry & "' and LineId='" & objen.DocLineId & "';"
                     objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
                     objDA.sqlda.Fill(objDA.Ds2)
                     Return objDA.Ds2
                 Else
                     objDA.strQuery = "select ItemCode,ItemName,isnull(CodeBars,'0') as CodeBars from OITM T0 left Join [@Z_ITCAT1] T1 on T0.U_CatCode=T1.U_CatCode "
                     objDA.strQuery += "inner join [@Z_DLC_LOGIN] T2 on T1.DocEntry=T2.DocEntry where T2.U_EMPID = " & objen.EmpId & " and T0.InvntItem='Y';"
-                    objDA.strQuery += " select U_Z_ItemCode,U_Z_ItemName,U_Z_BarCode,U_Z_OrdUom,U_Z_OrdQty,U_Z_AltBarCode,U_Z_AltItemCode,U_Z_AltItemName,U_Z_DelUom,U_Z_DeliQty  from [@Z_PRQ1] where DocEntry='" & objen.DocEntry & "' and LineId='" & objen.DocLineId & "';"
+                    objDA.strQuery += " select U_Z_ItemCode,U_Z_ItemName,U_Z_BarCode,U_Z_OrdUom,CAST(U_Z_OrdQty AS Int) AS U_Z_OrdQty,U_Z_AltBarCode,U_Z_AltItemCode,U_Z_AltItemName,U_Z_DelUom,CAST(U_Z_DeliQty AS Int) AS U_Z_DeliQty  from [@Z_PRQ1] where DocEntry='" & objen.DocEntry & "' and LineId='" & objen.DocLineId & "';"
                     objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
                     objDA.sqlda.Fill(objDA.Ds2)
                     Return objDA.Ds2
@@ -381,7 +381,7 @@ Public Class PRApprovalDA
     End Function
     Public Function LoadHistory(ByVal objEN As PRApprovalEN) As DataSet
         Try
-            objDA.strQuery = " Select DocEntry,U_Z_DocEntry,U_Z_DocType,U_Z_EmpId,U_Z_EmpName,U_Z_ItemCode,U_Z_ItemName,U_Z_OrdQty,U_Z_delUomDesc,U_Z_ApproveBy,convert(varchar(10),CreateDate,103) as CreateDate,CreateTime, convert(varchar(10),UpdateDate,103) as UpdateDate,UpdateTime,Case U_Z_AppStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' end AS U_Z_AppStatus,U_Z_Remarks From [@Z_DLC_APHIS] "
+            objDA.strQuery = " Select DocEntry,U_Z_DocEntry,U_Z_DocType,U_Z_EmpId,U_Z_EmpName,U_Z_ItemCode,U_Z_ItemName,CAST(U_Z_OrdQty AS Int) AS U_Z_OrdQty,U_Z_delUomDesc,U_Z_ApproveBy,convert(varchar(10),CreateDate,103) as CreateDate,CreateTime, convert(varchar(10),UpdateDate,103) as UpdateDate,UpdateTime,Case U_Z_AppStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' end AS U_Z_AppStatus,U_Z_Remarks From [@Z_DLC_APHIS] "
             objDA.strQuery += " Where U_Z_DocType = 'PR'"
             objDA.strQuery += " And U_Z_DocEntry = '" + objEN.DocEntry + "' and U_Z_DlineId='" & objEN.DocLineId & "'"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
@@ -394,8 +394,8 @@ Public Class PRApprovalDA
     End Function
     Public Function BindExpenseSummaryApproval(ByVal objEN As PRApprovalEN) As DataSet
         Try
-            objDA.strQuery = " Select T4.U_Z_DocNo,T0.DocEntry,T4.LineId,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,T4.U_Z_ItemCode,T4.U_Z_ItemName,T4.U_Z_OrdQty,T4.U_Z_OrdUomDesc,T4.U_Z_OrdUom,T4.U_Z_AltItemCode,T4.U_Z_AltItemName,Case Isnull(T4.U_Z_AppStatus,'P') when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end  AS U_Z_AppStatus,"
-            objDA.strQuery += "T4.U_Z_DeliQty,T4.U_Z_DelUom,T4.U_Z_DelUomDesc,U_Z_BarCode,U_Z_AltBarCode,U_Z_LineStatus,U_Z_GoodIssue,U_Z_CurApprover,U_Z_NxtApprover,"
+            objDA.strQuery = " Select T4.U_Z_DocNo,T0.DocEntry,T4.LineId,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,T4.U_Z_ItemCode,T4.U_Z_ItemName,CAST(T4.U_Z_OrdQty AS Int) AS U_Z_OrdQty,T4.U_Z_OrdUomDesc,T4.U_Z_OrdUom,T4.U_Z_AltItemCode,T4.U_Z_AltItemName,Case Isnull(T4.U_Z_AppStatus,'P') when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end  AS U_Z_AppStatus,"
+            objDA.strQuery += " CAST(T4.U_Z_DeliQty AS Int) AS U_Z_DeliQty,T4.U_Z_DelUom,T4.U_Z_DelUomDesc,U_Z_BarCode,U_Z_AltBarCode,U_Z_LineStatus,U_Z_GoodIssue,U_Z_CurApprover,U_Z_NxtApprover,"
             objDA.strQuery += " Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',T4.U_Z_RejRemark,Convert(Varchar(10),T4.U_Z_AppReqDate,103) AS U_Z_AppReqDate,CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime'"
             objDA.strQuery += "  From [@Z_OPRQ] T0 JOIN [@Z_PRQ1] T4 on T0.DocEntry=T4.DocEntry"
             objDA.strQuery += "  JOIN [@Z_DLC_APPT2] T2 ON T4.U_Z_ApproveId = T2.DocEntry"

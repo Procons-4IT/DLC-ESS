@@ -6,129 +6,97 @@ PRDLC
 </name>
 </assembly>
 <members>
-<member name="F:PRDLC.ChangePwd.UpdateProgress">
+<member name="F:PRDLC.EMPRDLC.Head1">
 	<summary>
-UpdateProgress control.
+Head1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.modalPopup">
+</member><member name="F:PRDLC.EMPRDLC.head">
 	<summary>
-modalPopup control.
+head control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.Update">
+</member><member name="F:PRDLC.EMPRDLC.form1">
 	<summary>
-Update control.
+form1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.Label3">
+</member><member name="F:PRDLC.EMPRDLC.ToolkitScriptManager1">
 	<summary>
-Label3 control.
+ToolkitScriptManager1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.lblNewTrip">
+</member><member name="F:PRDLC.EMPRDLC.lblcompany">
 	<summary>
-lblNewTrip control.
+lblcompany control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.panelhome">
+</member><member name="F:PRDLC.EMPRDLC.lblstreet">
 	<summary>
-panelhome control.
+lblstreet control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.btnhome">
+</member><member name="F:PRDLC.EMPRDLC.lblblock">
 	<summary>
-btnhome control.
+lblblock control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.Label2">
+</member><member name="F:PRDLC.EMPRDLC.lblstate">
 	<summary>
-Label2 control.
+lblstate control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.panelnew">
+</member><member name="F:PRDLC.EMPRDLC.lbluser">
 	<summary>
-panelnew control.
+lbluser control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.Div1">
+</member><member name="F:PRDLC.EMPRDLC.ddlLang">
 	<summary>
-Div1 control.
+ddlLang control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.txtoldpwd">
+</member><member name="F:PRDLC.EMPRDLC.ContentPlaceHolder1">
 	<summary>
-txtoldpwd control.
+ContentPlaceHolder1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.ChangePwd.txtnewpwd">
+</member><member name="F:PRDLC.EMPRDLC.lbtnlogout">
 	<summary>
-txtnewpwd control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.ChangePwd.txtconfirmpwd">
-	<summary>
-txtconfirmpwd control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.ChangePwd.CompareValidator">
-	<summary>
-CompareValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.ChangePwd.btnsave">
-	<summary>
-btnsave control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.ChangePwd.btnclose">
-	<summary>
-btnclose control.
+lbtnlogout control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -398,6 +366,14 @@ lblTANo control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:PRDLC.PRApproval.lblcostcenter">
+	<summary>
+lblcostcenter control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:PRDLC.PRApproval.lblDocStatus">
 	<summary>
 lblDocStatus control.
@@ -545,22 +521,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PRDLC.PRApproval.txtItemcode">
 	<summary>
 txtItemcode control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRApproval.btnItem">
-	<summary>
-btnItem control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRApproval.ModalPopupExtender7">
-	<summary>
-ModalPopupExtender7 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -761,663 +721,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PRDLC.PRApproval.grdItems1">
 	<summary>
 grdItems1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.UpdateProgress">
-	<summary>
-UpdateProgress control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.modalPopup">
-	<summary>
-modalPopup control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.Update">
-	<summary>
-Update control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.Label3">
-	<summary>
-Label3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lblNewTrip">
-	<summary>
-lblNewTrip control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.panelhome">
-	<summary>
-panelhome control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.btnhome">
-	<summary>
-btnhome control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.PanelMain">
-	<summary>
-PanelMain control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.TabContainer1">
-	<summary>
-TabContainer1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.TabPanel2">
-	<summary>
-TabPanel2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.GrdLoadRequest">
-	<summary>
-GrdLoadRequest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.TabPanel4">
-	<summary>
-TabPanel4 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.grdSummaryLoad">
-	<summary>
-grdSummaryLoad control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lbtnHistory">
-	<summary>
-lbtnHistory control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.ModalPopupExtender6">
-	<summary>
-ModalPopupExtender6 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.grdSummary">
-	<summary>
-grdSummary control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.panelview">
-	<summary>
-panelview control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.Div1">
-	<summary>
-Div1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lbldocno">
-	<summary>
-lbldocno control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lblsubdt">
-	<summary>
-lblsubdt control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lblempNo">
-	<summary>
-lblempNo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lblempname">
-	<summary>
-lblempname control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lbldeptName">
-	<summary>
-lbldeptName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lbldept">
-	<summary>
-lbldept control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.ddldestination">
-	<summary>
-ddldestination control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lblTANo">
-	<summary>
-lblTANo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.lblDocStatus">
-	<summary>
-lblDocStatus control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.TabContainer2">
-	<summary>
-TabContainer2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.TabPanel3">
-	<summary>
-TabPanel3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.grdRequestApproval">
-	<summary>
-grdRequestApproval control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.grdApprovalHis">
-	<summary>
-grdApprovalHis control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.btnAdd">
-	<summary>
-btnAdd control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.btncancel">
-	<summary>
-btncancel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.PanelItemEntry">
-	<summary>
-PanelItemEntry control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.btnclstech2">
-	<summary>
-btnclstech2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.Panel3">
-	<summary>
-Panel3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.Panel1">
-	<summary>
-Panel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRApproval.grdHistorySummary">
-	<summary>
-grdHistorySummary control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:PRDLC.My.MyWebExtension.Application">
-	<summary>
- Returns information about the current application.
- </summary>
-</member><member name="P:PRDLC.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:PRDLC.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:PRDLC.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:PRDLC.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:PRDLC.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="P:PRDLC.My.MyWebExtension.WebServices">
-	<summary>
- Provides access to WebServices added to this project.
- </summary>
-</member><member name="T:PRDLC.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
-</member><member name="F:PRDLC.Login.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.Login.TxtUid">
-	<summary>
-TxtUid control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.Login.TxtPwd">
-	<summary>
-TxtPwd control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.Login.BtnSubmit">
-	<summary>
-BtnSubmit control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.UpdateProgress">
-	<summary>
-UpdateProgress control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.modalPopup">
-	<summary>
-modalPopup control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.Update">
-	<summary>
-Update control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.Label3">
-	<summary>
-Label3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.lblNewTrip">
-	<summary>
-lblNewTrip control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.panelhome">
-	<summary>
-panelhome control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.btnhome">
-	<summary>
-btnhome control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.PanelMain">
-	<summary>
-PanelMain control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.TabContainer1">
-	<summary>
-TabContainer1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.TabPanel2">
-	<summary>
-TabPanel2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.GrdLoadRequest">
-	<summary>
-GrdLoadRequest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.grdRequestApproval">
-	<summary>
-grdRequestApproval control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.btnAdd">
-	<summary>
-btnAdd control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.btncancel">
-	<summary>
-btncancel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.TabPanel4">
-	<summary>
-TabPanel4 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.grdSummaryLoad">
-	<summary>
-grdSummaryLoad control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.grdSummary">
-	<summary>
-grdSummary control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.btnSample">
-	<summary>
-btnSample control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.ModalPopupExtender2">
-	<summary>
-ModalPopupExtender2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.Panelpoptechnician1">
-	<summary>
-Panelpoptechnician1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.Button1">
-	<summary>
-Button1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.Panel5">
-	<summary>
-Panel5 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.Label1">
-	<summary>
-Label1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.PRDLCApproval.grdRequesttohr">
-	<summary>
-grdRequesttohr control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.Head1">
-	<summary>
-Head1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.head">
-	<summary>
-head control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.ToolkitScriptManager1">
-	<summary>
-ToolkitScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.lblcompany">
-	<summary>
-lblcompany control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.lblstreet">
-	<summary>
-lblstreet control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.lblblock">
-	<summary>
-lblblock control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.lblstate">
-	<summary>
-lblstate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.lbluser">
-	<summary>
-lbluser control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.ddlLang">
-	<summary>
-ddlLang control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.ContentPlaceHolder1">
-	<summary>
-ContentPlaceHolder1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.EMPRDLC.lbtnlogout">
-	<summary>
-lbtnlogout control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2031,7 +1334,7 @@ grdRequesttohr control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.UpdateProgress">
+</member><member name="F:PRDLC.PRDLCApproval.UpdateProgress">
 	<summary>
 UpdateProgress control.
 </summary>
@@ -2039,7 +1342,7 @@ UpdateProgress control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.modalPopup">
+</member><member name="F:PRDLC.PRDLCApproval.modalPopup">
 	<summary>
 modalPopup control.
 </summary>
@@ -2047,7 +1350,7 @@ modalPopup control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.Update">
+</member><member name="F:PRDLC.PRDLCApproval.Update">
 	<summary>
 Update control.
 </summary>
@@ -2055,7 +1358,7 @@ Update control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.Label3">
+</member><member name="F:PRDLC.PRDLCApproval.Label3">
 	<summary>
 Label3 control.
 </summary>
@@ -2063,7 +1366,7 @@ Label3 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lblNewTrip">
+</member><member name="F:PRDLC.PRDLCApproval.lblNewTrip">
 	<summary>
 lblNewTrip control.
 </summary>
@@ -2071,7 +1374,7 @@ lblNewTrip control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.panelhome">
+</member><member name="F:PRDLC.PRDLCApproval.panelhome">
 	<summary>
 panelhome control.
 </summary>
@@ -2079,7 +1382,7 @@ panelhome control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.btnhome">
+</member><member name="F:PRDLC.PRDLCApproval.btnhome">
 	<summary>
 btnhome control.
 </summary>
@@ -2087,7 +1390,7 @@ btnhome control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.PanelMain">
+</member><member name="F:PRDLC.PRDLCApproval.PanelMain">
 	<summary>
 PanelMain control.
 </summary>
@@ -2095,7 +1398,7 @@ PanelMain control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.TabContainer1">
+</member><member name="F:PRDLC.PRDLCApproval.TabContainer1">
 	<summary>
 TabContainer1 control.
 </summary>
@@ -2103,7 +1406,7 @@ TabContainer1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.TabPanel2">
+</member><member name="F:PRDLC.PRDLCApproval.TabPanel2">
 	<summary>
 TabPanel2 control.
 </summary>
@@ -2111,7 +1414,7 @@ TabPanel2 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.GrdLoadRequest">
+</member><member name="F:PRDLC.PRDLCApproval.GrdLoadRequest">
 	<summary>
 GrdLoadRequest control.
 </summary>
@@ -2119,7 +1422,7 @@ GrdLoadRequest control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.grdRequestApproval">
+</member><member name="F:PRDLC.PRDLCApproval.grdRequestApproval">
 	<summary>
 grdRequestApproval control.
 </summary>
@@ -2127,7 +1430,7 @@ grdRequestApproval control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.btnAdd">
+</member><member name="F:PRDLC.PRDLCApproval.btnAdd">
 	<summary>
 btnAdd control.
 </summary>
@@ -2135,7 +1438,7 @@ btnAdd control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.btncancel">
+</member><member name="F:PRDLC.PRDLCApproval.btncancel">
 	<summary>
 btncancel control.
 </summary>
@@ -2143,7 +1446,7 @@ btncancel control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.TabPanel4">
+</member><member name="F:PRDLC.PRDLCApproval.TabPanel4">
 	<summary>
 TabPanel4 control.
 </summary>
@@ -2151,7 +1454,7 @@ TabPanel4 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.grdSummaryLoad">
+</member><member name="F:PRDLC.PRDLCApproval.grdSummaryLoad">
 	<summary>
 grdSummaryLoad control.
 </summary>
@@ -2159,23 +1462,7 @@ grdSummaryLoad control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lbtnHistory">
-	<summary>
-lbtnHistory control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.ModalPopupExtender6">
-	<summary>
-ModalPopupExtender6 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.grdSummary">
+</member><member name="F:PRDLC.PRDLCApproval.grdSummary">
 	<summary>
 grdSummary control.
 </summary>
@@ -2183,119 +1470,7 @@ grdSummary control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.panelview">
-	<summary>
-panelview control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.Div1">
-	<summary>
-Div1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lbldocno">
-	<summary>
-lbldocno control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lblsubdt">
-	<summary>
-lblsubdt control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lblempNo">
-	<summary>
-lblempNo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lblempname">
-	<summary>
-lblempname control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lbldeptName">
-	<summary>
-lbldeptName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lbldept">
-	<summary>
-lbldept control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.ddldestination">
-	<summary>
-ddldestination control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lblTANo">
-	<summary>
-lblTANo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.lblDocStatus">
-	<summary>
-lblDocStatus control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.TabContainer2">
-	<summary>
-TabContainer2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.TabPanel3">
-	<summary>
-TabPanel3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.grdApprovalHis">
-	<summary>
-grdApprovalHis control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:PRDLC.MRDLCApproval.btnSample">
+</member><member name="F:PRDLC.PRDLCApproval.btnSample">
 	<summary>
 btnSample control.
 </summary>
@@ -2303,7 +1478,7 @@ btnSample control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.ModalPopupExtender2">
+</member><member name="F:PRDLC.PRDLCApproval.ModalPopupExtender2">
 	<summary>
 ModalPopupExtender2 control.
 </summary>
@@ -2311,7 +1486,7 @@ ModalPopupExtender2 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.Panelpoptechnician1">
+</member><member name="F:PRDLC.PRDLCApproval.Panelpoptechnician1">
 	<summary>
 Panelpoptechnician1 control.
 </summary>
@@ -2319,7 +1494,7 @@ Panelpoptechnician1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.Button1">
+</member><member name="F:PRDLC.PRDLCApproval.Button1">
 	<summary>
 Button1 control.
 </summary>
@@ -2327,7 +1502,7 @@ Button1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.Panel5">
+</member><member name="F:PRDLC.PRDLCApproval.Panel5">
 	<summary>
 Panel5 control.
 </summary>
@@ -2335,7 +1510,7 @@ Panel5 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.Label1">
+</member><member name="F:PRDLC.PRDLCApproval.Label1">
 	<summary>
 Label1 control.
 </summary>
@@ -2343,7 +1518,7 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:PRDLC.MRDLCApproval.grdRequesttohr">
+</member><member name="F:PRDLC.PRDLCApproval.grdRequesttohr">
 	<summary>
 grdRequesttohr control.
 </summary>
@@ -2351,6 +1526,343 @@ grdRequesttohr control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:PRDLC.MRApproval.UpdateProgress">
+	<summary>
+UpdateProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.modalPopup">
+	<summary>
+modalPopup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.Update">
+	<summary>
+Update control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lblNewTrip">
+	<summary>
+lblNewTrip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.panelhome">
+	<summary>
+panelhome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.btnhome">
+	<summary>
+btnhome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.PanelMain">
+	<summary>
+PanelMain control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.TabContainer1">
+	<summary>
+TabContainer1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.TabPanel2">
+	<summary>
+TabPanel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.GrdLoadRequest">
+	<summary>
+GrdLoadRequest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.TabPanel4">
+	<summary>
+TabPanel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.grdSummaryLoad">
+	<summary>
+grdSummaryLoad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lbtnHistory">
+	<summary>
+lbtnHistory control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.ModalPopupExtender6">
+	<summary>
+ModalPopupExtender6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.grdSummary">
+	<summary>
+grdSummary control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.panelview">
+	<summary>
+panelview control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.Div1">
+	<summary>
+Div1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lbldocno">
+	<summary>
+lbldocno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lblsubdt">
+	<summary>
+lblsubdt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lblempNo">
+	<summary>
+lblempNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lblempname">
+	<summary>
+lblempname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lbldeptName">
+	<summary>
+lbldeptName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lbldept">
+	<summary>
+lbldept control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.ddldestination">
+	<summary>
+ddldestination control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lblTANo">
+	<summary>
+lblTANo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.lblDocStatus">
+	<summary>
+lblDocStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.TabContainer2">
+	<summary>
+TabContainer2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.TabPanel3">
+	<summary>
+TabPanel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.grdRequestApproval">
+	<summary>
+grdRequestApproval control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.grdApprovalHis">
+	<summary>
+grdApprovalHis control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.btnAdd">
+	<summary>
+btnAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.btncancel">
+	<summary>
+btncancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.PanelItemEntry">
+	<summary>
+PanelItemEntry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.btnclstech2">
+	<summary>
+btnclstech2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.Panel3">
+	<summary>
+Panel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRApproval.grdHistorySummary">
+	<summary>
+grdHistorySummary control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:PRDLC.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:PRDLC.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:PRDLC.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:PRDLC.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:PRDLC.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:PRDLC.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:PRDLC.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:PRDLC.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
 </member><member name="F:PRDLC.EmpPR.UpdateProgress">
 	<summary>
 UpdateProgress control.
@@ -2586,6 +2098,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PRDLC.EmpPR.lbldept">
 	<summary>
 lbldept control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.EmpPR.lblCostCenter">
+	<summary>
+lblCostCenter control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2986,6 +2506,486 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:PRDLC.EmpPR.grdRequesttohr">
 	<summary>
 grdRequesttohr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.UpdateProgress">
+	<summary>
+UpdateProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.modalPopup">
+	<summary>
+modalPopup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.Update">
+	<summary>
+Update control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lblNewTrip">
+	<summary>
+lblNewTrip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.panelhome">
+	<summary>
+panelhome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.btnhome">
+	<summary>
+btnhome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.PanelMain">
+	<summary>
+PanelMain control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.TabContainer1">
+	<summary>
+TabContainer1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.TabPanel2">
+	<summary>
+TabPanel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.GrdLoadRequest">
+	<summary>
+GrdLoadRequest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.grdRequestApproval">
+	<summary>
+grdRequestApproval control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.btnAdd">
+	<summary>
+btnAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.btncancel">
+	<summary>
+btncancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.TabPanel4">
+	<summary>
+TabPanel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.grdSummaryLoad">
+	<summary>
+grdSummaryLoad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lbtnHistory">
+	<summary>
+lbtnHistory control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.ModalPopupExtender6">
+	<summary>
+ModalPopupExtender6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.grdSummary">
+	<summary>
+grdSummary control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.panelview">
+	<summary>
+panelview control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.Div1">
+	<summary>
+Div1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lbldocno">
+	<summary>
+lbldocno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lblsubdt">
+	<summary>
+lblsubdt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lblempNo">
+	<summary>
+lblempNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lblempname">
+	<summary>
+lblempname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lbldeptName">
+	<summary>
+lbldeptName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lbldept">
+	<summary>
+lbldept control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.ddldestination">
+	<summary>
+ddldestination control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lblTANo">
+	<summary>
+lblTANo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.lblDocStatus">
+	<summary>
+lblDocStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.TabContainer2">
+	<summary>
+TabContainer2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.TabPanel3">
+	<summary>
+TabPanel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.grdApprovalHis">
+	<summary>
+grdApprovalHis control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.btnSample">
+	<summary>
+btnSample control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.ModalPopupExtender2">
+	<summary>
+ModalPopupExtender2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.Panelpoptechnician1">
+	<summary>
+Panelpoptechnician1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.Panel5">
+	<summary>
+Panel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.MRDLCApproval.grdRequesttohr">
+	<summary>
+grdRequesttohr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.UpdateProgress">
+	<summary>
+UpdateProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.modalPopup">
+	<summary>
+modalPopup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.Update">
+	<summary>
+Update control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.lblNewTrip">
+	<summary>
+lblNewTrip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.panelhome">
+	<summary>
+panelhome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.btnhome">
+	<summary>
+btnhome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.panelnew">
+	<summary>
+panelnew control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.Div1">
+	<summary>
+Div1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.txtoldpwd">
+	<summary>
+txtoldpwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.txtnewpwd">
+	<summary>
+txtnewpwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.txtconfirmpwd">
+	<summary>
+txtconfirmpwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.CompareValidator">
+	<summary>
+CompareValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.btnsave">
+	<summary>
+btnsave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.ChangePwd.btnclose">
+	<summary>
+btnclose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.Login.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.Login.TxtUid">
+	<summary>
+TxtUid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.Login.TxtPwd">
+	<summary>
+TxtPwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PRDLC.Login.BtnSubmit">
+	<summary>
+BtnSubmit control.
 </summary>
 	<remarks>
 Auto-generated field.

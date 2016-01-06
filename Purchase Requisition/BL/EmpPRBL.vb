@@ -10,6 +10,13 @@ Public Class EmpPRBL
             Throw ex
         End Try
     End Function
+    Public Function GetCostCenter(ByVal objen As EmpPREN) As String
+        Try
+            Return objDA.GetCostCenter(objen)
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
     Public Function BindItemCode(ByVal objen As EmpPREN) As DataSet
         Try
             Return objDA.BindItemCode(objen)

@@ -566,3 +566,43 @@ E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_
 E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_20151209\Purchase Requisition_20151209\PRDLC\obj\Debug\PRDLC.dll
 E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_20151209\Purchase Requisition_20151209\PRDLC\obj\Debug\PRDLC.xml
 E:\Projects\Web Developments\Purchase Requisition\Delivery\Purchase Requisition_20151209\Purchase Requisition_20151209\PRDLC\obj\Debug\PRDLC.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\PRDLC.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\PRDLC.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\PRDLC.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\AjaxControlToolkit.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\BL.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\DAL.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\EN.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\AjaxMin.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\BL.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\BL.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\DAL.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\DAL.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\EN.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\EN.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\AjaxControlToolkit.pdb
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\ar\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\cs\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\de\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\es\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\fr\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\he\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\hi\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\it\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\ja\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\ko\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\nl\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\pl\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\pt\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\ru\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\tr-TR\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\zh-CHS\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\bin\zh-CHT\AjaxControlToolkit.resources.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\obj\Debug\PRDLC.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\obj\Debug\PRDLC.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\obj\Debug\PRDLC.Resources.resources
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\obj\Debug\PRDLC.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\obj\Debug\PRDLC.dll
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\obj\Debug\PRDLC.xml
+E:\Projects\Web Developments\Purchase Requisition\SourceCode\Purchase Requisition_20160106\PRDLC\obj\Debug\PRDLC.pdb

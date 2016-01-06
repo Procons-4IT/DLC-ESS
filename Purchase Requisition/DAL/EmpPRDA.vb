@@ -26,6 +26,20 @@ Public Class EmpPRDA
             Throw ex
         End Try
     End Function
+    Public Function GetCostCenter(ByVal objen As EmpPREN) As String
+        Dim status As String = ""
+        Try
+            objDA.con.Open()
+            objDA.cmd = New SqlCommand("select U_Dimension  from [@Z_DLC_LOGIN] WHERE   U_EMPID='" & objen.EmpId & "'", objDA.con)
+            objDA.cmd.CommandType = CommandType.Text
+            status = objDA.cmd.ExecuteScalar()
+            objDA.con.Close()
+            Return status
+        Catch ex As Exception
+            ErrHandler.WriteError(ex.Message)
+        End Try
+        Return status
+    End Function
     Public Function BindItemCode(ByVal objen As EmpPREN) As DataSet
         Try
             objDA.strQuery = "Select U_AllItemCat  from [@Z_DLC_LOGIN] T0 where U_EMPID=" & objen.EmpId & ""
@@ -65,9 +79,9 @@ Public Class EmpPRDA
     Public Function InsertLines(ByVal objen As EmpPREN) As String
         Try
             objDA.strQuery = "Insert Into [U_OPRQ] (EmpId,Empname,DocDate,DefWhs,DeptCode,DeptName,DocNum,DocStatus,OrdPatient,ItemCode,ItemName,ItemSpec,OrderQty,OrderUom,AltItemCode,AltItemDesc,DelQty,DelUom,Barcode,LineStatus,SessionId,"
-            objDA.strQuery += " OrderUomDesc,DelUomDesc,AppStatus,NewDocStatus) Values ('" & objen.EmpId & "','" & objen.EmpName & "',getdate(),'" & objen.Defwhs & "','" & objen.DeptCode & "','" & objen.DeptName & "','" & objen.DocNo & "','" & objen.DocStatus & "','" & objen.OrdrPatient & "','" & objen.ItemCode & "','" & objen.Itemdesc & "','" & objen.ItemSpec & "',"
+            objDA.strQuery += " OrderUomDesc,DelUomDesc,AppStatus,NewDocStatus,CostCenter) Values ('" & objen.EmpId & "','" & objen.EmpName & "',getdate(),'" & objen.Defwhs & "','" & objen.DeptCode & "','" & objen.DeptName & "','" & objen.DocNo & "','" & objen.DocStatus & "','" & objen.OrdrPatient & "','" & objen.ItemCode & "','" & objen.Itemdesc & "','" & objen.ItemSpec & "',"
             objDA.strQuery += " '" & objen.OrdrQty & "','" & objen.OrdrUom & "','" & objen.ItemCode & "','" & objen.Itemdesc & "','" & objen.OrdrQty & "','" & objen.OrdrUom & "'"
-            objDA.strQuery += " ,'" & objen.Barcode & "','O','" & objen.SessionId & "' ,'" & objen.OrdrUomDesc & "','" & objen.OrdrUomDesc & "','P','N')"
+            objDA.strQuery += " ,'" & objen.Barcode & "','O','" & objen.SessionId & "' ,'" & objen.OrdrUomDesc & "','" & objen.OrdrUomDesc & "','P','N','" & objen.CostCenter & "')"
             objDA.cmd = New SqlCommand(objDA.strQuery, objDA.con)
             objDA.con.Open()
             objDA.cmd.ExecuteNonQuery()
@@ -95,7 +109,7 @@ Public Class EmpPRDA
                     End If
                     objDA.strQuery = "Insert Into [U_OPRQ] (DocNum,RefNo,SessionId,Empid,Empname,DocDate,DefWhs,DeptCode,DeptName,DocStatus,"
                     objDA.strQuery += " OrdPatient,ItemCode,ItemName,OrderQty,OrderUom,OrderUomDesc,AltItemCode,AltItemDesc,DelQty,DelUom,DelUomDesc,"
-                    objDA.strQuery += " ReceivedQty,ReceivedUom,ReceivedUomDesc,LineStatus,Barcode,AlterBarCode,AppStatus,NewDocStatus) Values ('" & objDA.dss4.Tables(0).Rows(introw)("LineId").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("DocNum").ToString() & "','" & objen.SessionId & "',"
+                    objDA.strQuery += " ReceivedQty,ReceivedUom,ReceivedUomDesc,LineStatus,Barcode,AlterBarCode,AppStatus,NewDocStatus,CostCenter) Values ('" & objDA.dss4.Tables(0).Rows(introw)("LineId").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("DocNum").ToString() & "','" & objen.SessionId & "',"
                     objDA.strQuery += " '" & objDA.dss4.Tables(0).Rows(introw)("U_Z_EmpID").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_EmpName").ToString() & "','" & dtsubdt.ToString("yyyy-MM-dd") & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_Destination").ToString() & "', "
                     objDA.strQuery += " '" & objDA.dss4.Tables(0).Rows(introw)("U_Z_DeptCode").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_DeptName").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_DocStatus").ToString() & "', "
                     objDA.strQuery += " '" & objDA.dss4.Tables(0).Rows(introw)("U_Z_OrdPatient").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_ItemCode").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_ItemName").ToString() & "',"
@@ -103,7 +117,7 @@ Public Class EmpPRDA
                     objDA.strQuery += " '" & objDA.dss4.Tables(0).Rows(introw)("U_Z_AltItemName").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_DeliQty").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_DelUom").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_DelUomDesc").ToString() & "',"
                     objDA.strQuery += " '" & objDA.dss4.Tables(0).Rows(introw)("U_Z_RecQty").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_RecUom").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_RecUomDesc").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_LineStatus").ToString().Trim() & "', "
                     objDA.strQuery += " '" & objDA.dss4.Tables(0).Rows(introw)("U_Z_BarCode").ToString() & "','" & objDA.dss4.Tables(0).Rows(introw)("U_Z_AltBarCode").ToString() & "', "
-                    objDA.strQuery += " '" & objDA.dss4.Tables(0).Rows(introw)("U_Z_AppStatus").ToString().Trim() & "','E')"
+                    objDA.strQuery += " '" & objDA.dss4.Tables(0).Rows(introw)("U_Z_AppStatus").ToString().Trim() & "','E','" & objDA.dss4.Tables(0).Rows(introw)("U_Dimension").ToString().Trim() & "')"
                     objDA.cmd = New SqlCommand(objDA.strQuery, objDA.con)
                     objDA.con.Open()
                     objDA.cmd.ExecuteNonQuery()
@@ -121,7 +135,7 @@ Public Class EmpPRDA
     Public Function TempLines(ByVal objen As EmpPREN) As DataSet
         Try
             objDA.strQuery = "Select case LineStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' end as 'LineDesc',"
-            objDA.strQuery += " Case AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end as 'AppDesc',*  from [U_OPRQ]  where SessionId=" & objen.SessionId & " and EmpId='" & objen.EmpId & "'"
+            objDA.strQuery += " Case AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end as 'AppDesc',CAST(OrderQty AS int) AS OrderQty,CAST(DelQty AS int) AS DelQty, *  from [U_OPRQ]  where SessionId=" & objen.SessionId & " and EmpId='" & objen.EmpId & "'"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.dss1)
             Return objDA.dss1
@@ -170,8 +184,8 @@ Public Class EmpPRDA
     Public Function BindPRequestApproval(ByVal objEN As EmpPREN) As DataSet
         Try
             objDA.strQuery = "Select case LineStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' end as 'LineDesc',"
-            objDA.strQuery += " Case AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end as 'AppDesc', *  from [U_OPRQ]  where SessionId=" & objEN.SessionId & " and EmpId='" & objEN.EmpId & "' and (isnull(RefNo,'')='" & objEN.DocNo & "' or isnull(RefNo,'')='');"
-            objDA.strQuery += " Select T0.DocEntry,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,Case isnull(T0.""U_Z_DocStatus"",'O') when 'O' then 'Open' when 'I' then 'InProgress' when 'S' then 'Confirm' when 'L' then 'Cancelled' when 'D' then 'Draft' when 'R' then 'DLC Rejected' when 'DI' then 'DLC InProgress'  else 'Closed' end AS U_Z_DocStatus,U_Z_Priority from [@Z_OPRQ] T0 where DocEntry='" & objEN.DocNo & "';"
+            objDA.strQuery += " Case AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end as 'AppDesc',CAST(OrderQty AS int) AS OrderQty,CAST(DelQty AS int) AS DelQty,CAST(ReceivedQty AS Int) AS ReceivedQty, *  from [U_OPRQ]  where SessionId=" & objEN.SessionId & " and EmpId='" & objEN.EmpId & "' and (isnull(RefNo,'')='" & objEN.DocNo & "' or isnull(RefNo,'')='');"
+            objDA.strQuery += " Select T0.DocEntry,T0.U_Z_EmpID,T0.U_Z_EmpName,Convert(Varchar(10),T0.U_Z_DocDate,103) AS U_Z_DocDate,T0.U_Z_DeptCode,T0.U_Z_DeptName,U_Z_Destination,Case isnull(T0.""U_Z_DocStatus"",'O') when 'O' then 'Open' when 'I' then 'InProgress' when 'S' then 'Confirm' when 'L' then 'Cancelled' when 'D' then 'Draft' when 'R' then 'DLC Rejected' when 'DI' then 'DLC InProgress'  else 'Closed' end AS U_Z_DocStatus,U_Z_Priority,U_Dimension from [@Z_OPRQ] T0 where DocEntry='" & objEN.DocNo & "';"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.Ds1)
             Return objDA.Ds1
@@ -247,7 +261,7 @@ Public Class EmpPRDA
     End Function
     Public Function LoadHistory(ByVal objEN As EmpPREN) As DataSet
         Try
-            objDA.strQuery = " Select DocEntry,U_Z_DocEntry,U_Z_DocType,U_Z_EmpId,U_Z_EmpName,U_Z_ItemCode,U_Z_ItemName,U_Z_OrdQty,U_Z_delUomDesc,U_Z_ApproveBy,convert(varchar(10),CreateDate,103) as CreateDate,CreateTime, convert(varchar(10),UpdateDate,103) as UpdateDate,UpdateTime,Case U_Z_AppStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' when 'R' then 'DLC Rejected' when 'A' then 'DLC Approved' end AS U_Z_AppStatus,U_Z_Remarks From [@Z_DLC_APHIS] "
+            objDA.strQuery = " Select DocEntry,U_Z_DocEntry,U_Z_DocType,U_Z_EmpId,U_Z_EmpName,U_Z_ItemCode,U_Z_ItemName,CAST(U_Z_OrdQty AS Int) AS U_Z_OrdQty,U_Z_delUomDesc,U_Z_ApproveBy,convert(varchar(10),CreateDate,103) as CreateDate,CreateTime, convert(varchar(10),UpdateDate,103) as UpdateDate,UpdateTime,Case U_Z_AppStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' when 'R' then 'DLC Rejected' when 'A' then 'DLC Approved' end AS U_Z_AppStatus,U_Z_Remarks From [@Z_DLC_APHIS] "
             objDA.strQuery += " Where (U_Z_DocType = 'PRD' or U_Z_DocType='PR')"
             objDA.strQuery += " And U_Z_DocEntry = '" + objEN.Code + "' and (isnull(U_Z_DLineId,'')='" & objEN.LineId & "' or isnull(U_Z_DLineId,'')='')"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)

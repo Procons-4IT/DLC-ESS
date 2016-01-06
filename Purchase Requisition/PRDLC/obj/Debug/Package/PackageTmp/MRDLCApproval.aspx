@@ -85,7 +85,7 @@
                                                 <td valign="top">
                                                     <ajx:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0" CssClass="ajax__tab_yuitabview-theme"
                                                         Width="100%">
-                                                        <ajx:TabPanel ID="TabPanel2" runat="server" HeaderText="Purchase Requisition Approval">
+                                                        <ajx:TabPanel ID="TabPanel2" runat="server" HeaderText="Material Return Approval">
                                                             <ContentTemplate>
                                                                 <table width="100%" border="0" cellspacing="0" cellpadding="3" class="main_content">
                                                                     <tr>
@@ -128,7 +128,7 @@
                                                                                         <ItemTemplate>
                                                                                             <div align="left">
                                                                                                 &nbsp;<asp:Label ID="lblRDept" runat="server" Text='<%#Bind("U_Z_DeptName") %>'></asp:Label>
-                                                                                                  &nbsp;<asp:Label ID="lblRdeptCode" runat="server" Text='<%#Bind("U_Z_DeptCode") %>'></asp:Label>
+                                                                                                  &nbsp;<asp:Label ID="lblRdeptCode" runat="server" Text='<%#Bind("U_Z_DeptCode") %>' Visible="false"></asp:Label>
                                                                                             </div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>

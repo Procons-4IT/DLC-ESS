@@ -52,7 +52,7 @@ Public Class MRApprovalDA
     End Function
     Public Function BindPRequestApproval(ByVal objEN As PRApprovalEN) As DataSet
         Try
-            objDA.strQuery = " Select T0.U_Z_DocRefNo,T0.LineId,T0.DocEntry,T0.U_Z_ItemCode,T0.U_Z_ItemName,T0.U_Z_OrdQty,T0.U_Z_OrdUomDesc,T0.U_Z_OrdUom,Isnull(T0.U_Z_AppStatus,'P') AS U_Z_AppStatus,"
+            objDA.strQuery = " Select T0.U_Z_DocRefNo,T0.LineId,T0.DocEntry,T0.U_Z_ItemCode,T0.U_Z_ItemName,CAST(T0.U_Z_OrdQty AS Int) AS U_Z_OrdQty,T0.U_Z_OrdUomDesc,T0.U_Z_OrdUom,Isnull(T0.U_Z_AppStatus,'P') AS U_Z_AppStatus,"
             objDA.strQuery += "U_Z_BarCode,U_Z_LineStatus,U_Z_CurApprover,U_Z_NxtApprover,"
             objDA.strQuery += " Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',T0.U_Z_RejRemark,Convert(Varchar(10),T0.U_Z_AppReqDate,103) AS U_Z_AppReqDate,CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime'"
             objDA.strQuery += " From [@Z_RPD1] T0 Left Outer Join [@Z_ORPD] T5 on T0.DocEntry=T5.DocEntry and T5.DocEntry='" & objEN.DocEntry & "'"
@@ -71,7 +71,7 @@ Public Class MRApprovalDA
     End Function
     Public Function LoadHistory(ByVal objEN As PRApprovalEN) As DataSet
         Try
-            objDA.strQuery = " Select DocEntry,U_Z_DocEntry,U_Z_DocType,U_Z_EmpId,U_Z_EmpName,U_Z_ItemCode,U_Z_ItemName,U_Z_OrdQty,U_Z_delUomDesc,U_Z_ApproveBy,convert(varchar(10),CreateDate,103) as CreateDate,CreateTime, convert(varchar(10),UpdateDate,103) as UpdateDate,UpdateTime,Case U_Z_AppStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' end AS U_Z_AppStatus,U_Z_Remarks From [@Z_DLC_APHIS] "
+            objDA.strQuery = " Select DocEntry,U_Z_DocEntry,U_Z_DocType,U_Z_EmpId,U_Z_EmpName,U_Z_ItemCode,U_Z_ItemName,CAST(U_Z_OrdQty AS Int) AS U_Z_OrdQty,U_Z_delUomDesc,U_Z_ApproveBy,convert(varchar(10),CreateDate,103) as CreateDate,CreateTime, convert(varchar(10),UpdateDate,103) as UpdateDate,UpdateTime,Case U_Z_AppStatus when 'O' then 'Open' when 'D' then 'Delivered' when 'C' then 'Close' when 'L' then 'Cancelled' end AS U_Z_AppStatus,U_Z_Remarks From [@Z_DLC_APHIS] "
             objDA.strQuery += " Where U_Z_DocType = 'MR' And U_Z_DocEntry = '" & objEN.DocEntry & "' and isnull(U_Z_DLineId,'')='" & objEN.HeadLineId & "'"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.Ds2)
@@ -83,7 +83,7 @@ Public Class MRApprovalDA
     End Function
     Public Function BindExpenseSummaryApproval(ByVal objEN As PRApprovalEN) As DataSet
         Try
-            objDA.strQuery = " Select T0.U_Z_DocRefNo,T0.LineId,T0.DocEntry,T0.U_Z_ItemCode,T0.U_Z_ItemName,T0.U_Z_OrdQty,T0.U_Z_OrdUomDesc,T0.U_Z_OrdUom,Case Isnull(T0.U_Z_AppStatus,'P') when 'A' then 'Approved' when 'R' then 'Rejected' else 'Pending' end AS U_Z_AppStatus,"
+            objDA.strQuery = " Select T0.U_Z_DocRefNo,T0.LineId,T0.DocEntry,T0.U_Z_ItemCode,T0.U_Z_ItemName,CAST(T0.U_Z_OrdQty AS Int) AS U_Z_OrdQty,T0.U_Z_OrdUomDesc,T0.U_Z_OrdUom,Case Isnull(T0.U_Z_AppStatus,'P') when 'A' then 'Approved' when 'R' then 'Rejected' else 'Pending' end AS U_Z_AppStatus,"
             objDA.strQuery += "U_Z_BarCode,U_Z_LineStatus,U_Z_CurApprover,U_Z_NxtApprover,"
             objDA.strQuery += " Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',T0.U_Z_RejRemark,Convert(Varchar(10),T0.U_Z_AppReqDate,103) AS U_Z_AppReqDate,CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime'"
             objDA.strQuery += " From [@Z_RPD1] T0 Left Outer Join [@Z_ORPD] T5 on T0.DocEntry=T5.DocEntry and T5.DocEntry='" & objEN.DocEntry & "'"

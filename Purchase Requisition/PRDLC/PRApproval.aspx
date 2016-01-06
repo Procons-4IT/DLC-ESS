@@ -40,7 +40,30 @@
             }
         }
 
+        function AllowNumbers(el) {
+            var ex = /^[0-9]+$/;
+            if (ex.test(el.value) == false) {
+                el.value = el.value.substring(0, el.value.length - 1);
+            }
+        }
+        function alphanumerichypen(el) {
+            var ex = /^[A-Za-z0-9_-]+$/;
+            if (ex.test(el.value) == false) {
+                el.value = el.value.substring(0, el.value.length - 1);
+            }
+        }
 
+        function checkDec(el) {
+            //            el.value = el.value.replace(/^[ 0]+/, '');
+            var ex = /^\d*\.?\d{0,6}$/;
+            if (ex.test(el.value) == false) {
+                el.value = el.value.substring(0, el.value.length - 1);
+            }
+        }
+
+        function RemoveZero(el) {
+            el.value = el.value.replace(/^[ ]+/, '');
+        }
 
         function SelectAllCheckboxes(spanChk) {
 
@@ -515,9 +538,11 @@
                                                             </tr>
                                                             <tr>
                                                                 <td width="10%">
+                                                                Cost Center
                                                                 </td>
                                                                 <td width="10%">
                                                                     <asp:Label ID="lblTANo" CssClass="txtbox" runat="server" Visible="false"></asp:Label>
+                                                                       <asp:Label ID="lblcostcenter" CssClass="txtbox" runat="server" ></asp:Label>
                                                                 </td>
                                                                 <td width="5%">
                                                                 </td>

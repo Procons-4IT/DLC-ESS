@@ -122,7 +122,6 @@ Public Class EmpPR
     End Sub
 
     Private Sub btnnew_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btnnew.Click
-        System.Threading.Thread.Sleep(2000)
         Try
             lblNExist.Text = "N"
             btnRecSubmit.Visible = False
@@ -131,12 +130,14 @@ Public Class EmpPR
             panelview.Visible = False
             PanelNewRequest.Visible = True
             btnAdd.Visible = True
-            objEN.EmpId = lblempNo.Text.Trim()
             lbldocno.Text = dbcon.Getmaxcode("[@Z_OPRQ]", "DocEntry")
             lblsubdt.Text = Date.Now.ToShortDateString()
             lblempname.Text = Session("UserName").ToString()
             lblempNo.Text = Session("UserCode").ToString()
+            objEN.EmpId = lblempNo.Text.Trim()
             dbcon.strmsg = objBL.DeleteTempTable(objEN)
+            objEN.EmpId = lblempNo.Text.Trim()
+            lblCostCenter.Text = objBL.GetCostCenter(objEN)
             ddlNewStatus.SelectedItem.Text = "Draft"
             ddlDocStatus.SelectedItem.Text = "Draft"
             ddlDocStatus.Visible = False
@@ -197,7 +198,7 @@ Public Class EmpPR
                 objEN.OrdrUomDesc = ddlUom.SelectedItem.Text.Trim()
                 objEN.Barcode = txtIbarcode.Text.Trim()
                 objEN.SessionId = Session("SessionId").ToString()
-
+                objEN.CostCenter = lblCostCenter.Text.Trim()
                 dbcon.strmsg = objBL.InsertLines(objEN)
                 If dbcon.strmsg = "Success" Then
                     ModalPopupExtender6.Hide()
@@ -287,7 +288,7 @@ Public Class EmpPR
                 oGeneralData1.SetProperty("U_Z_DocStatus", DocStatus)
                 oGeneralData1.SetProperty("U_Z_Destination", ddldestination.SelectedValue)
                 oGeneralData1.SetProperty("U_Z_Priority", ddlPriority.SelectedValue)
-
+                oGeneralData1.SetProperty("U_Dimension", lblCostCenter.Text.Trim())
                 oChildren1 = oGeneralData1.Child("Z_PRQ1")
 
                 dbcon.strQuery = "Select * from ""U_OPRQ""   where ""SessionId""='" & objEN.SessionId & "' AND ""EmpId""='" & objEN.EmpId & "'"
@@ -314,6 +315,7 @@ Public Class EmpPR
                     oChild.SetProperty("U_Z_OrdPatient", oRecSet.Fields.Item("OrdPatient").Value)
                     oChild.SetProperty("U_Z_LineStatus", LineStatus)
                     oChild.SetProperty("U_Z_AppStatus", ApprovalStatus) ' dbcon.DocApproval("PR", lbldept.Text.Trim()))
+                    oChild.SetProperty("U_Dimension", lblCostCenter.Text.Trim())
                     oRecSet.MoveNext()
                 Next
                 oGeneralParams = oGeneralService.Add(oGeneralData1)
@@ -323,7 +325,7 @@ Public Class EmpPR
                 oGeneralData1.SetProperty("U_Z_DocStatus", DocStatus)
                 oGeneralData1.SetProperty("U_Z_Destination", ddldestination.SelectedValue)
                 oGeneralData1.SetProperty("U_Z_Priority", ddlPriority.SelectedValue)
-
+                oGeneralData1.SetProperty("U_Dimension", lblCostCenter.Text.Trim())
                 oChildren1 = oGeneralData1.Child("Z_PRQ1")
 
                 dbcon.strQuery = "Select * from ""U_OPRQ""   where ""SessionId""='" & objEN.SessionId & "' AND ""EmpId""='" & objEN.EmpId & "' and isnull(NewDocStatus,'N')='N'"
@@ -349,6 +351,7 @@ Public Class EmpPR
                     oChild.SetProperty("U_Z_BarCode", oRecSet.Fields.Item("Barcode").Value)
                     oChild.SetProperty("U_Z_OrdPatient", oRecSet.Fields.Item("OrdPatient").Value)
                     oChild.SetProperty("U_Z_LineStatus", LineStatus)
+                    oChild.SetProperty("U_Dimension", lblCostCenter.Text.Trim())
                     oChild.SetProperty("U_Z_AppStatus", ApprovalStatus) ' dbcon.DocApproval("PR", lbldept.Text.Trim()))
                     oRecSet.MoveNext()
                 Next
@@ -389,7 +392,9 @@ Public Class EmpPR
         Dim dblQuantity, dblBatchRequiredQty As Double
         Dim oDocument As SAPbobsCOM.Documents
         Dim oRecordSet, oTemp As SAPbobsCOM.Recordset
-        Dim strQuery As String
+        Dim strQuery, strStaticValue As String
+        Dim ststring As String()
+
         oRecordSet = objEN.SapCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
         oTemp = objEN.SapCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
         oDocument = objEN.SAPCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oInventoryGenExit)
@@ -419,7 +424,23 @@ Public Class EmpPR
                             oDocument.Lines.UoMEntry = oRecordSet.Fields.Item("U_Z_RecUom").Value
                         End If
                         oDocument.Lines.ItemCode = oRecordSet.Fields.Item("U_Z_AltItemCode").Value
-
+                        strStaticValue = oRecordSet.Fields.Item("U_Dimension").Value
+                        ststring = strStaticValue.Split(";")
+                        If ststring(0) <> "" Then
+                            oDocument.Lines.CostingCode = ststring(0)
+                        End If
+                        If ststring(1) <> "" Then
+                            oDocument.Lines.CostingCode2 = ststring(1)
+                        End If
+                        If ststring(2) <> "" Then
+                            oDocument.Lines.CostingCode3 = ststring(2)
+                        End If
+                        If ststring(3) <> "" Then
+                            oDocument.Lines.CostingCode4 = ststring(3)
+                        End If
+                        If ststring(4) <> "" Then
+                            oDocument.Lines.CostingCode5 = ststring(4)
+                        End If
                         If oItem.GetByKey(oDocument.Lines.ItemCode) Then
                             If oItem.ManageBatchNumbers = SAPbobsCOM.BoYesNoEnum.tYES Then
                                 Dim inTbatchLine As Integer = 0
@@ -465,6 +486,7 @@ Public Class EmpPR
                     If oDocument.Add <> 0 Then
                         dbcon.strmsg = objEN.SAPCompany.GetLastErrorDescription
                         ErrHandler.WriteError(dbcon.strmsg)
+                        Return dbcon.strmsg
                     Else
                         Dim strdocCode As String
                         objEN.SapCompany.GetNewObjectCode(strdocCode)
@@ -556,6 +578,7 @@ Public Class EmpPR
                 lblempname.Text = dbcon.Ds1.Tables(1).Rows(0)("U_Z_EmpName").ToString()
                 lbldept.Text = dbcon.Ds1.Tables(1).Rows(0)("U_Z_DeptCode").ToString()
                 lbldeptName.Text = dbcon.Ds1.Tables(1).Rows(0)("U_Z_DeptName").ToString()
+                lblCostCenter.Text = dbcon.Ds1.Tables(1).Rows(0)("U_Dimension").ToString()
                 ddldestination.SelectedValue = dbcon.Ds1.Tables(1).Rows(0)("U_Z_Destination").ToString()
                 ddlPriority.SelectedValue = dbcon.Ds1.Tables(1).Rows(0)("U_Z_Priority").ToString()
                 ddlDocStatus.SelectedItem.Text = dbcon.Ds1.Tables(1).Rows(0)("U_Z_DocStatus").ToString()
@@ -739,7 +762,7 @@ Public Class EmpPR
                 End If
             Next
             dbcon.strmsg = CreateGoodsIssue(objEN)
-            If blnFlag = blnFlag1 Then
+            If blnFlag = blnFlag1 And dbcon.strmsg = "Success" Then
                 objEN.DocStatus = "C"
                 objEN.EmpId = lblempNo.Text.Trim()
                 objEN.Code = lbldocno.Text.Trim()
@@ -749,6 +772,9 @@ Public Class EmpPR
                     dbcon.strmsg = "alert('" & dbcon.strmsg & "')"
                     mess(dbcon.strmsg)
                 End If
+            Else
+                dbcon.strmsg = "alert('" & dbcon.strmsg & "')"
+                mess(dbcon.strmsg)
             End If
             objEN.SessionId = Session("SessionId").ToString()
             objEN.EmpId = Session("UserCode").ToString()

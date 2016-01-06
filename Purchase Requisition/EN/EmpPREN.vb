@@ -19,6 +19,15 @@
     Private _Code As String
     Private _DelQty As String
     Private _LineId As String
+    Private _CostCenter As String
+    Public Property CostCenter() As String
+        Get
+            Return _CostCenter
+        End Get
+        Set(ByVal value As String)
+            _CostCenter = value
+        End Set
+    End Property
     Public Property SAPCompany() As SAPbobsCOM.Company
         Get
             Return _SAPCompany
